@@ -1,0 +1,4 @@
+name: minecraft-cash
+author: SrMinister_
+version: 1.0
+main: net.hyren.cash.CashPlugin

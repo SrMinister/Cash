@@ -1,0 +1,1 @@
+SELECT * FROM `hyren_cash`;
