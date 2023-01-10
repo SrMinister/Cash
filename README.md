@@ -8,7 +8,7 @@ Sistemas que tem nesse projeto.
 #Imagens relacionada ao plugin
 
 <br/>
-<img src="https://imgur.com/a/Fr9PYSu" alt="Cash Ranking"/> 
+<img src="[https://imgur.com/a/Fr9PYSu](https://imgur.com/FeJNWK5)" alt="Cash Ranking"/> 
 
 <br/>
 <img src="https://prnt.sc/zSgPywVFcVsm" alt="Cash atual"/><br/>
