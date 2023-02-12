@@ -1,1 +1,1 @@
-SELECT * FROM `hyren_cash` WHERE uuid=?;
+SELECT * FROM `kaiquy_cash` WHERE uuid=?;
