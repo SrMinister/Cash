@@ -1,1 +1,1 @@
-INSERT INTO `kaiquy_cash` (`uuid`, `username`, `cash`) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE `cash` = VALUE(`cash`)
+UPDATE kaiquy_cash SET username = ?, cash = ? WHERE uuid = ?;
