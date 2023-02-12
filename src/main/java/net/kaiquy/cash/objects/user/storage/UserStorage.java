@@ -26,19 +26,24 @@ public class UserStorage {
         this.sqlReader = new SQLReader();
         sqlReader.loadFromResources("sql/");
 
-        this.function = set -> User.builder().uuid(UUID.fromString(set.getString("uuid"))).cash(set.getDouble("cash")).build();
+        this.function = set ->
+                User.builder()
+                .uuid(UUID.fromString(set.getString("uuid")))
+                .username(set.getString("username"))
+                .cash(set.getDouble("cash"))
+                .build();
     }
 
-    public boolean createTable() {
-        return connectionProvider.executeUpdate(sqlReader.getSql("create_table_query")) > 0;
+    public void createTable() {
+        connectionProvider.executeUpdate(sqlReader.getSql("create_table_query"));
+    }
+
+    public void createUserOnTable(User user) {
+        connectionProvider.executeUpdate(sqlReader.getSql("create_user_query"), user.getUuid().toString(), user.getUsername(), user.getCash());
     }
 
     public boolean storeAndUpdate(User user) {
-        return connectionProvider.executeUpdate(sqlReader.getSql("store_and_update_query"),
-                user.getUuid().toString(),
-                user.getUsername(),
-                user.getCash()
-        ) > 0;
+        return connectionProvider.executeUpdate(sqlReader.getSql("store_and_update_query"), user.getUsername(), user.getCash(), user.getUuid().toString()) > 0;
     }
 
     public User findUser(UUID uuid) {

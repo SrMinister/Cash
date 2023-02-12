@@ -38,7 +38,7 @@ public class UserController {
                         .username(player.getName())
                         .cash(0)
                         .build();
-                plugin.getUserStorage().storeAndUpdate(user);
+                plugin.getUserStorage().createUserOnTable(user);
             }
             plugin.getUserStorage().storeAndUpdate(user);
             plugin.getUserCache().addCachedElement(user);

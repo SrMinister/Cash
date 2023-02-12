@@ -1,0 +1,1 @@
+INSERT INTO kaiquy_cash (uuid, username, cash) VALUES (?, ?, ?);
