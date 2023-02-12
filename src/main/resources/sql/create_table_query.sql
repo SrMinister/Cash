@@ -1,5 +1,6 @@
-CREATE TABLE IF NOT EXISTS `hyren_cash` (
-    uuid CHAR(36) NOT NULL PRIMARY KEY,
-    username VARCHAR(64),
-    cash DOUBLE
+CREATE TABLE IF NOT EXISTS `kaiquy_cash` (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    uuid CHAR(36) NOT NULL,
+    username VARCHAR(64) NOT NULL,
+    cash DOUBLE NOT NULL DEFAULT 0.0,
 );

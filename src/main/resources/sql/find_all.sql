@@ -1,1 +1,1 @@
-SELECT * FROM `hyren_cash`;
+SELECT * FROM `kaiquy_cash`;

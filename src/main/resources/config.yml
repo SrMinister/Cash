@@ -12,6 +12,10 @@ Messages:
   pay_cash: "&fVocê acaba de enviar &6✪{value}&f para o jogador &7{target}&f."
   target_pay_cash: "&fVocê acaba de receber &6✪{value} &fdo jogador &7{player}&f."
 
+Permissions:
+  add_cash: "cash.add"
+  set_cash: "cash.set"
+
 CurrencyFormat:
   - ""
   - "k"
